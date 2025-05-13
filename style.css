@@ -1,0 +1,232 @@
+    body {
+        background-color: #202834;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 80px;
+        color: #f0f8ff;
+    }
+
+    nav h1 {
+        font-size: 25px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 15px;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+    }
+
+    .active {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+
+    main {
+        padding: 0 200px 0 200px;
+        color: #f0f8ff;
+        text-align: center;
+    }
+
+    /* HOME */
+    main>section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main>section>header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #42a5a8;
+    }
+
+    section>header {
+        text-align: center;
+    }
+
+    section>header h2 {
+        font-size: 32px;
+        color: #1de9b6;
+        margin-bottom: 10px;
+        text-shadow: 0 0 8px #1de9b6;
+    }
+
+    section>header p {
+        font-size: 18px;
+        color: #b2ebf2;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+    }
+
+    section.card a {
+        display: flex;
+        background-color: #2b3443;
+        border-radius: 10px;
+        align-items: center;
+        padding-bottom: 20px;
+        flex-direction: column;
+        color: aliceblue;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .card img {
+        border-radius: 10px 10px 0 0;
+        width: 330px;
+    }
+
+    .card button {
+        background-color: #42a5a8;
+        color: aliceblue;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        box-shadow: 0 0 10px #42a5a8;
+        background-color: #2b3443;
+        transition: 0.3s;
+        transform: scale(1.05);
+        filter: brightness(1.1);
+        border-radius: 10px;
+    }
+
+    .card button:hover {
+        background-color: #3b8c8f;
+    }
+
+    /* aluno Page */
+    .aluno-page h2 {
+        color: #1de9b6
+    }
+
+    .aluno-page img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 0 12px rgba(29, 233, 182, 0.3);
+        object-fit: cover;
+        border: 2px solid #42a5a8;
+    }
+
+    .aluno-page p {
+
+        text-align: justify;
+    }
+
+
+    table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: #2b3443;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 12px rgba(29, 233, 182, 0.3);
+    }
+
+    thead {
+        background-color: #42a5a8;
+    }
+
+    thead th {
+        padding: 15px;
+        font-size: 18px;
+        color: #fff;
+        text-shadow: 0 0 4px #000;
+    }
+
+    tbody td {
+        padding: 15px;
+        font-size: 16px;
+        text-align: center;
+        color: #f0f8ff;
+        border-top: 1px solid #3a4654;
+    }
+
+
+    tbody tr:hover {
+        background-color: #3c4d63;
+        transition: 0.3s;
+    }
+
+    .sites-page {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            background-color: #2b3443;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            width: 250px;
+        }
+
+        ul li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #1de9b6;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            display: block;
+            text-align: center;
+        }
+
+        ul li figure {
+            margin: 0;
+        }
+
+        ul li img {
+            width: 240px;
+            height: 240px;
+            object-fit: fill;
+            border-bottom: 2px solid #1de9b6;
+        }
+
+        ul li figcaption {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #2b3443;
+            color: #f0f8ff;
+            text-shadow: 0 0 4px #000;
+        }
+
+        .remangas {
+            width: 240px;
+            height: 240px;
+        }
+
+    }
